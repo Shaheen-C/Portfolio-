@@ -862,7 +862,7 @@ const ChatBot = ({ isOpen, onToggle }) => {
 
   try {
     const response = await fetch(
-  "http://localhost:5000/chat",
+  "https://shaheen-ai.onrender.com",
   {
     method: "POST",
     headers: {
@@ -920,7 +920,7 @@ setMessages(prev => [
       <div className="chat-header">
         <div className="chat-avatar">🤖</div>
         <div className="chat-info">
-          <strong>Shaheen</strong>
+          <strong>  Shaheen</strong>
           <span><span className="chat-online" />Online now</span>
         </div>
         <button className="chat-close" onClick={onToggle}>✕</button>
