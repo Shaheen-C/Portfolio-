@@ -137,16 +137,13 @@ reply: "good to hear that 🙂 ask me about myself"
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      model: "openrouter/auto",
+      model: "deepseek/deepseek-chat-v3-0324:free",
+      max_tokens: 60,
       temperature: 0.3,
       messages: [
   {
     role: "system",
     content: SHAHEEN_CONTEXT
-  },
-  {
-    role: "assistant",
-    content: "hey, what's up?"
   },
   {
     role: "user",
