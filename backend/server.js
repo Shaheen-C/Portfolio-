@@ -65,8 +65,8 @@ Originally from Malappuram, Kerala.
 
 Working as Data Analyst at Happe Toys since Jan 2026.
 
-Daily tools:
-Power BI, SQL, Excel.
+Skills and tools:
+Power BI, SQL, Excel, Python, Web Development.
 
 Currently learning:
 Advanced SQL, Data Engineering, Azure.
