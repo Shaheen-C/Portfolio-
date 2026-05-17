@@ -862,7 +862,7 @@ const ChatBot = ({ isOpen, onToggle }) => {
 
   try {
     const response = await fetch(
-  "https://shaheen-ai.onrender.com",
+  "https://shaheen-ai.onrender.com/chat",
   {
     method: "POST",
     headers: {
