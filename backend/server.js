@@ -158,6 +158,39 @@ return res.json({
 reply: "good to hear that 🙂 ask me about myself"
 });
 }
+if (
+lowerMsg.includes("skills") ||
+lowerMsg.includes("tools")
+) {
+return res.json({
+reply: "mostly Power BI, SQL and Excel. also worked with Python, Flask, React and MySQL in projects."
+});
+}
+
+if (
+lowerMsg.includes("open to work") ||
+lowerMsg.includes("job")
+) {
+return res.json({
+reply: "yeah, open to good opportunities."
+});
+}
+
+if (
+lowerMsg.includes("tell me about yourself")
+) {
+return res.json({
+reply: "im a data analyst based in Doha. originally from Kerala. mostly working with Power BI, SQL and analytics stuff these days."
+});
+}
+
+if (
+lowerMsg.includes("projects")
+) {
+return res.json({
+reply: "built a few analytics dashboards, an AI assistant called Second Mind, Cleanlytics, Parkiko and some other web app projects."
+});
+}
 
 
   const response = await fetch(
