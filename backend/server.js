@@ -127,6 +127,19 @@ app.post("/chat", async (req, res) => {
 
     const lowerMsg = message.toLowerCase().trim();
 
+    if (
+lowerMsg.includes("open to work") ||
+lowerMsg.includes("opportunity") ||
+lowerMsg.includes("hiring") ||
+lowerMsg.includes("looking for job") ||
+lowerMsg.includes("looking for work")
+) {
+return res.json({
+reply: "yeah, open to better opportunities."
+});
+}
+
+
 if (
 lowerMsg === "hi" ||
 lowerMsg === "hello" ||
