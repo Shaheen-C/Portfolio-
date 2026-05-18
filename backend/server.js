@@ -236,9 +236,6 @@ Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
 
 const data = response.data;
 
-
-const data = await response.json();
-
 console.log(data);
 
 const reply =
