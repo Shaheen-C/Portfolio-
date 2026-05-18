@@ -1,3 +1,4 @@
+const axios = require("axios");
 require("dotenv").config();
 
 const express = require("express");
@@ -208,31 +209,33 @@ reply: "built a few analytics dashboards, an AI assistant called Second Mind, Cl
 }
 
 
-  const response = await fetch(
-  "https://openrouter.ai/api/v1/chat/completions",
-  {
-    method: "POST",
-    headers: {
-      "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      model: "deepseek/deepseek-chat-v3-0324:free",
-      temperature: 0.2,
-      max_tokens: 50,
-      messages: [
-  {
-    role: "system",
-    content: SHAHEEN_CONTEXT
-  },
-  {
-    role: "user",
-    content: message
-  }
+const response = await axios.post(
+"https://openrouter.ai/api/v1/chat/completions",
+{
+model: "deepseek/deepseek-chat-v3-0324:free",
+temperature: 0.2,
+max_tokens: 60,
+messages: [
+{
+role: "system",
+content: SHAHEEN_CONTEXT
+},
+{
+role: "user",
+content: message
+}
 ]
-    })
-  }
+},
+{
+headers: {
+Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
+"Content-Type": "application/json"
+}
+}
 );
+
+const data = response.data;
+
 
 const data = await response.json();
 
