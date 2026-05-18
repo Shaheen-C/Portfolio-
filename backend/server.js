@@ -146,7 +146,7 @@ lowerMsg === "hello" ||
 lowerMsg === "hey"
 ) {
 return res.json({
-reply: "hey 🙂"
+reply: "hey"
 });
 }
 
