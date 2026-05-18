@@ -158,7 +158,7 @@ lowerMsg === "hw r u?" ||
 lowerMsg === "hru"
 ) {
 return res.json({
-reply: "im good, what about you?"
+reply: "im good"
 });
 }
 
