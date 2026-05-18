@@ -203,8 +203,8 @@ reply: "built a few analytics dashboards, an AI assistant called Second Mind, Cl
     },
     body: JSON.stringify({
       model: "deepseek/deepseek-chat-v3-0324:free",
-      max_tokens: 60,
-      temperature: 0.3,
+      temperature: 0.2,
+      max_tokens: 120,
       messages: [
   {
     role: "system",
