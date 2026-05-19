@@ -212,7 +212,7 @@ reply: "built a few analytics dashboards, an AI assistant called Second Mind, Cl
 const response = await axios.post(
 "https://openrouter.ai/api/v1/chat/completions",
 {
-model: "deepseek/deepseek-chat-v3-0324:free",
+model: "openrouter/auto",
 temperature: 0.2,
 max_tokens: 60,
 messages: [
